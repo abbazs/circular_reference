@@ -1,5 +1,10 @@
+from __future__ import annotations
+from typing import TYPE_CHECKING
+
 from attrs import define, field
-from .holder import Holder
+
+if TYPE_CHECKING:
+    from .holder import Holder
 
 
 @define
